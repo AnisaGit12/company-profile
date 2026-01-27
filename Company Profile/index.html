@@ -3,22 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Company Profile Nutica</title>
+  <title>Nutica Company Profile</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Nutica Company</h1>
+
+<header>
+  <div class="container">
+    <h1 class="logo">Nutica</h1>
     <nav>
-      <a href="#visi-misi">Visi & Misi</a> |
-      <a href="#customer">Customer</a> |
-      <a href="#berita">Berita Acara</a> |
+      <a href="#visi-misi">Visi & Misi</a>
+      <a href="#customer">Customer</a>
+      <a href="#berita">Berita</a>
       <a href="#kontak">Kontak</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <section id="visi-misi">
-    <h2>Visi dan Misi</h2>
+<section id="visi-misi" class="section">
+  <div class="container">
+    <h2>Visi & Misi</h2>
     <p><strong>Visi:</strong> Menjadi perusahaan terdepan di bidang teknologi.</p>
     <p><strong>Misi:</strong></p>
     <ul>
@@ -26,43 +31,55 @@
       <li>Meningkatkan kepuasan pelanggan.</li>
       <li>Memajukan sumber daya manusia.</li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <section id="customer">
+<section id="customer" class="section">
+  <div class="container">
     <h2>Customer Kami</h2>
-    <div class="customer-images">
-      <img src="images/customer1.jpg" alt="Customer 1" />
-      <img src="images/customer2.jpg" alt="Customer 2" />
-      <img src="images/customer3.jpg" alt="Customer 3" />
+    <div class="grid">
+      <div class="card"><img src="images/customer1.jpg" alt="Customer 1"></div>
+      <div class="card"><img src="images/customer2.jpg" alt="Customer 2"></div>
+      <div class="card"><img src="images/customer3.jpg" alt="Customer 3"></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="berita">
+<section id="berita" class="section">
+  <div class="container">
     <h2>Berita Acara</h2>
-    <article>
-      <h3>Peluncuran Produk Baru</h3>
-      <p>20 Januari 2026 — Nutica meluncurkan produk inovatif terbaru untuk pasar global.</p>
-    </article>
-    <article>
-      <h3>Kerjasama Strategis</h3>
-      <p>15 Januari 2026 — Nutica menjalin kerjasama dengan perusahaan terkemuka.</p>
-    </article>
-  </section>
+    <div class="grid">
+      <div class="card berita">
+        <h3>Peluncuran Produk Baru</h3>
+        <p>20 Januari 2026 — Nutica meluncurkan produk inovatif terbaru untuk pasar global.</p>
+      </div>
+      <div class="card berita">
+        <h3>Kerjasama Strategis</h3>
+        <p>15 Januari 2026 — Nutica menjalin kerjasama dengan perusahaan terkemuka.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <section id="kontak">
+<section id="kontak" class="section">
+  <div class="container">
     <h2>Kontak & Sosial Media</h2>
     <p>Email: info@nutica.co.id</p>
     <p>Telepon: +62 812 3456 7890</p>
     <p>
-      Sosial Media:  
-      <a href="https://facebook.com/nutica" target="_blank">Facebook</a> |  
-      <a href="https://instagram.com/nutica" target="_blank">Instagram</a> |  
-      <a href="https://linkedin.com/company/nutica" target="_blank">LinkedIn</a>
+      Sosial Media:
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
     </p>
-  </section>
+  </div>
+</section>
 
-  <footer>
+<footer>
+  <div class="container">
     <p>© 2026 Nutica Company. All rights reserved.</p>
-  </footer>
+  </div>
+</footer>
+
 </body>
 </html>
