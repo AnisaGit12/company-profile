@@ -1,125 +1,32 @@
-/* Reset / basic */
-body, h1, h2, h3, h4, h5, h6, p, ul {
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-}
-
-/* Header */
-.header {
-    background: #fff;
-    padding: 15px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-.logo {
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
-/* Navbar mobile toggle */
-.navmenu ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-.navmenu ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-.navmenu ul li a.active {
-    color: #007bff;
-}
-
-/* Hero Section */
 .hero {
-    background: url('../img/about.jpg') center/cover no-repeat;
-    color: #fff;
-    padding: 100px 0;
-}
-.hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-}
-.hero h2 {
-    font-size: 1.5rem;
-    margin: 20px 0;
-}
-.btn-get-started {
-    background: #007bff;
-    color: #fff;
-    padding: 10px 25px;
-    border-radius: 5px;
-    text-decoration: none;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Section styling */
-.section {
-    padding: 80px 0;
-}
-.section-title {
-    text-align: center;
-    margin-bottom: 50px;
-}
-.light-background {
-    background: #f9f9f9;
-}
-.dark-background {
-    background: #333;
-    color: #fff;
-    padding: 30px 0;
+/* overlay gelap + teks */
+.hero-overlay {
+  pointer-events: none; /* supaya tidak mengganggu klik tombol */
 }
 
-/* Services */
-.service-item {
-    background: #fff;
-    padding: 30px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
-}
-.service-item i {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #007bff;
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-/* Portfolio */
-.portfolio-item {
-    margin-bottom: 30px;
-}
-.portfolio-item img {
-    border-radius: 8px;
+.hero-content h2 {
+  font-size: 1.5rem;
+  margin-top: 15px;
 }
 
-/* Clients */
-.client-logo {
-    padding: 15px;
+.hero-content .btn {
+  padding: 10px 25px;
+  border-radius: 5px;
 }
 
-/* Contact form */
-.php-email-form input,
-.php-email-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-.php-email-form button {
-    background: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-}
-
-/* Footer */
-.footer {
-    padding: 20px 0;
-    font-size: 0.9rem;
+/* Gambar carousel proporsional */
+.hero .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
