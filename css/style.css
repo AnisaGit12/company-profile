@@ -1,0 +1,83 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and HTML */
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  height: 56px;
+  line-height: 56px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Make sure section #home has padding-top to not hidden under fixed navbar */
+#home {
+  padding-top: 56px; /* same height as navbar */
+}
+
+/* Carousel */
+.carousel-item img {
+  height: 600px;
+  object-fit: cover;
+}
+
+/* Carousel caption with fadeIn animation */
+.carousel-caption {
+  animation: fadeIn 1s ease-in-out;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-width: 70%;
+  margin: 0 auto;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Carousel indicators position */
+.carousel-indicators {
+  bottom: 10px;
+}
+
+/* Dropdown hover for Unit Bisnis */
+.navbar-nav li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown menu style */
+.dropdown-menu {
+  margin-top: 0;
+}
+
+/* Remove space under navbar and carousel */
+section,
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
