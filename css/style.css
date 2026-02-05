@@ -1,3 +1,41 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background: #0b1c2d;
+  padding: 30px 20px;
+  color: #fff;
+}
+
+.sidebar .logo {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.sidebar .nav-link {
+  color: #cfd8e3;
+  padding: 10px 0;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  color: #ffffff;
+  transform: translateX(6px);
+}
+
+/* Main content */
+.main-content {
+  margin-left: 240px;
+  padding: 40px;
+}
 /* Reset margin and padding */
 * {
   margin: 0;
@@ -81,3 +119,4 @@ section,
   padding: 0;
   border: none;
 }
+
