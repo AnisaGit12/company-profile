@@ -12,37 +12,43 @@ body {
   padding: 16px 0;
 }
 
-.custom-navbar .nav-link {
-  color: #cfd8e3;
-  margin-left: 20px;
-  font-weight: 500;
-}
-
-.custom-navbar .nav-link:hover {
-  color: #ffffff;
-}
-
-/* HERO */
+/* HERO CAROUSEL */
 .hero {
-  min-height: 100vh;
-  background: linear-gradient(
-      rgba(11, 28, 45, 0.75),
-      rgba(11, 28, 45, 0.75)
-    ),
-    url('assets/img/hero.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  padding-top: 100px;
+  margin-top: 80px;
 }
 
-.hero h1 {
+.carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 28, 45, 0.7);
+}
+
+.carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.carousel-content h1 {
   font-size: 48px;
   font-weight: 700;
 }
 
-.hero p {
-  max-width: 520px;
-  margin: 20px 0 30px;
+.carousel-content p {
+  font-size: 18px;
+  margin-top: 15px;
 }
 
 /* SECTION */
@@ -59,7 +65,7 @@ body {
 
 /* CARD */
 .card-custom {
-  background: #ffffff;
+  background: #fff;
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -75,12 +81,7 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .custom-navbar .nav-link {
-    margin-left: 0;
-    padding: 10px 0;
+  .carousel-content h1 {
+    font-size: 32px;
   }
 }
